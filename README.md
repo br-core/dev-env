@@ -6,7 +6,12 @@ Tools, Scripts, WorkFlow
 Setup Environment
 =======
 
-For Windows Users
+For Windows Users (Trivial)
+-------
+1. Todo
+
+
+For Power Windows Users (DIY)
 -------
 1. Download [Git](http://git-scm.com/download/win) Stand-alone for windows and install it
 ![mysgit setup](images/mysgit.png)
