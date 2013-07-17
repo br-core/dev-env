@@ -63,6 +63,26 @@
 <li>Install git(<code>sudo apt-get install git</code>)</li>
 <li>Download <a href="http://nodejs.org/download/">Nodejs</a> for linux and install it</li>
 <li>Install jshint (<code>npm install -g jshint</code>)</li>
+</ol><h2>
+<a name="install-newer-nodejs-on-ubuntu" class="anchor" href="#install-newer-nodejs-on-ubuntu"><span class="octicon octicon-link"></span></a>Install newer nodejs on Ubuntu</h2>
+
+<ol>
+<li>Edit source list(<code>sudo nano /ect/apt/sources.list</code>)</li>
+<li>Add (<code>http://archive.ubuntu.com/ubuntu/ quantal main restricted universe multiversedeb</code>) and (<code>http://security.ubuntu.com/ubuntu/ quantal-security main restricted universe multiverse</code>)</li>
+<li>Update Package list(<code>sudo apt-get update</code>)</li>
+<li>
+<p>Install nodejs</p>
+
+<pre><code>$sudo apt-get install python-software-properties
+
+$sudo add-apt-repository ppa:richarvey/nodejs
+
+$sudo apt-get update
+
+$sudo apt-get install nodejs
+</code></pre>
+</li>
+<li><p>Check version(<code>node -v</code>)</p></li>
 </ol><h1>
 <a name="how-to-contribute" class="anchor" href="#how-to-contribute"><span class="octicon octicon-link"></span></a>How to contribute?</h1>
 
