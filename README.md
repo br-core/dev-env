@@ -19,3 +19,11 @@ For Ubuntu Users
 1. Install git(`sudo apt-get install git`)
 2. Download [Nodejs](http://nodejs.org/download/) for linux and install it
 3. Install jshint (`npm install -g jshint`)
+
+
+How to contribute?
+=======
+1. Create a branch (`git checkout -b new_feature`)
+2. Commit your changes (`git commit -am "Added awesome feature"`)
+3. Push to the branch (`git push origin new_feature`)
+4. Open a **[Pull Request]** for review and merge
