@@ -23,7 +23,7 @@ For Ubuntu Users
 
 Install newer nodejs on Ubuntu
 -------
-1. Edit source list(`sudo nano /ect/apt/sources.listdeb`)
+1. Edit source list(`sudo nano /ect/apt/sources.list`)
 2. Add (`http://archive.ubuntu.com/ubuntu/ quantal main restricted universe multiversedeb`) and (`http://security.ubuntu.com/ubuntu/ quantal-security main restricted universe multiverse`)
 3. Update Package list(`sudo apt-get update`)
 4. Install nodejs
