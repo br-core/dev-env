@@ -21,6 +21,23 @@ For Ubuntu Users
 2. Download [Nodejs](http://nodejs.org/download/) for linux and install it
 3. Install jshint (`npm install -g jshint`)
 
+Install newer nodejs on Ubuntu
+-------
+1. Edit source list(`sudo nano /ect/apt/sources.listdeb`)
+2. Add (`http://archive.ubuntu.com/ubuntu/ quantal main restricted universe multiversedeb`) and (`http://security.ubuntu.com/ubuntu/ quantal-security main restricted universe multiverse`)
+3. Update Package list(`sudo apt-get update`)
+4. Install nodejs
+```
+  $sudo apt-get install python-software-properties
+
+  $sudo add-apt-repository ppa:richarvey/nodejs
+
+  $sudo apt-get update
+  
+  $sudo apt-get install nodejs
+```
+5. Check version(`node -v`)
+
 
 How to contribute?
 =======
