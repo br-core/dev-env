@@ -11,9 +11,9 @@ For Windows Users (Trivial)
 1. Download zip from [br-core-dev-env](https://github.com/br-core/dev-env/archive/master.zip)
 ![dl-zip](images/dl-zip.PNG)
 2. Extract the zip file to your computer.
-3. Click pre-install.bat then it will help you to download and install msysgit and nodejs for your OS (x86/x64).
-3. Click update.bat then it will help you to placed LUA and pre-commit script under the correct path.
-4. Click install_jshint.bat then it will help you to install jshint to check the syntax of javascripts.
+3. Click __/hooks/pre-install.bat__ then it will help you to download and install msysgit and nodejs for your OS (x86/x64).
+3. Click __/hooks/update.bat__ then it will help you to placed LUA and pre-commit script under the correct path.
+4. Click __/hooks/install_jshint.bat__ then it will help you to install jshint to check the syntax of javascripts.
 
 After that, if the pre-commit script have been update, you just only need to do two steps as below:
 
