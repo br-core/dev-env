@@ -8,8 +8,17 @@ Setup Environment
 
 For Windows Users (Trivial)
 -------
-1. Todo
+1. Download zip from [br-core-dev-env](https://github.com/br-core/dev-env/archive/master.zip)
+![dl-zip](images/dl-zip.PNG)
+2. Extract the zip file to your computer.
+3. Click pre-install.bat then it will help you to download and install msysgit and nodejs for your OS (x86/x64).
+3. Click update.bat then it will help you to placed LUA and pre-commit script under the correct path.
+4. Click install_jshint.bat then it will help you to install jshint to check the syntax of javascripts.
 
+After that, if the pre-commit script have been update, you just only need to do two steps as below:
+
+1. Update pre-commit script(git pull) with any git client (sourcetree...etc).
+2. Click update.bat.
 
 For Power Windows Users (DIY)
 -------
