@@ -18,7 +18,7 @@ SET LUA_DLL2="%~dp0misc\lua51.dll"
 
 REM Determine whether the system is X86 or X64
 Set RegQry=HKLM\Hardware\Description\System\CentralProcessor\0
-REG.exe Query %RegQry%  | Find /i "x86" 
+C:\Windows\System32\reg.exe Query %RegQry%  | Find /i "x86"
 If %ERRORLEVEL% == 0 (
     echo "x86"
 	goto COPYFILE_x86
