@@ -27,7 +27,8 @@ For Power Windows Users (DIY)
 2. Download [Nodejs](http://nodejs.org/download/) for windows and install it
 3. From Git Shell, install jshint (`npm install -g jshint`)
 4. Download [SourceTree](http://www.sourcetreeapp.com/download/) for windows and install it (without portable Git)
-5. Download [Lua for mingw](mingw_lua.zip), extract it, move `lua.exe`, `luac.exe` and `lua51.dll` to `C:\Program Files\Git\bin`
+5. Click update.bat then it will help you to placed LUA and pre-commit script under the correct path.
+6. Click install_jshint.bat then it will help you to install jshint to check the syntax of javascripts.
 
 For Ubuntu Users
 -------
