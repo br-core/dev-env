@@ -1,9 +1,10 @@
 Setup Environment
 =======
 
-1. Clone project from [Grunt](https://github.com/jwhu1024/Grunt_demo.git)
-2. Install related package by typing `npm install`
-3. Issue `grunt` in command prompt then it will starting to monitor your project.
+1. Clone project from [dev-env](https://github.com/br-core/dev-env.git)
+2. Issue `npm install -g grunt-cli`
+3. Issue `npm install`
+4. Issue `grunt` in command prompt then it will starting to monitor your project.
 
 Default behavior
 --------------
