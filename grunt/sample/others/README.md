@@ -2,8 +2,8 @@ Setup Environment
 =======
 
 1. Install grunt-cli globally `npm install -g grunt-cli`
-2. Change to the project's root directory. `/grunt`
-3. Clone project from [dev-env](https://github.com/br-core/dev-env.git)
+2. Clone project from [dev-env](https://github.com/br-core/dev-env.git)
+3. Change to the project's root directory. `/grunt`
 3. Install project dependencies with `npm install`
 4. Run Grunt with `grunt`
 
