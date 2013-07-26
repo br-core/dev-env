@@ -1,10 +1,11 @@
 Setup Environment
 =======
 
-1. Clone project from [dev-env](https://github.com/br-core/dev-env.git)
-2. Issue `npm install -g grunt-cli`
-3. Issue `npm install`
-4. Issue `grunt` in command prompt then it will starting to monitor your project.
+1. Install grunt-cli globally `npm install -g grunt-cli`
+2. Change to the project's root directory. `/grunt`
+3. Clone project from [dev-env](https://github.com/br-core/dev-env.git)
+3. Install project dependencies with `npm install`
+4. Run Grunt with `grunt`
 
 Default behavior
 --------------
