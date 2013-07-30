@@ -1,5 +1,5 @@
 describe("toContain Test", function (){
-	it("MyName should contain oranges", function () {
+	it("MyName() should contain oranges", function () {
 		expect(MyName()).toContain("Lester");
 	});
 });

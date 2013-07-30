@@ -29,6 +29,17 @@ module.exports = function(grunt) {
 			}
 		},
 		
+		// -- Cssmin Config --------------------------------------------------------
+		cssmin: {
+			minify: {
+				expand: true,
+				cwd: ".",
+				src: ["css/**/*.css", "!*.min.css"],
+				dest: "release/",
+				ext: ".min.css"
+			},
+		},
+		
 		// -- Connect Config -------------------------------------------------------
 		connect: {
 			livereload: {
@@ -48,9 +59,15 @@ module.exports = function(grunt) {
 				tasks: ["jshint", "jasmine"],
 				spawn: false
 			},
-			report: {
-				files: "_SpecRunner.html",
-				tasks: ["livereload"],
+			
+			css: {
+				files: ["css/**/*.css"],
+				tasks: ["cssmin"]
+			},
+			
+			html: {
+				files: ["index.html", "html/**/*.html", "_SpecRunner.html"],
+				tasks: ["livereload"]
 			},
 		},
 	});
@@ -60,10 +77,11 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks("grunt-contrib-jasmine");
 	grunt.loadNpmTasks("grunt-regarde");
 	grunt.loadNpmTasks("grunt-contrib-jshint");
+	grunt.loadNpmTasks("grunt-contrib-cssmin");
 	
 	grunt.registerTask("default", "", function (){
 		grunt.option("force", true);
-		grunt.task.run(["livereload-start", "connect", "regarde", "jasmine", "jshint"]);
+		grunt.task.run(["livereload-start", "connect", "regarde", "jasmine", "jshint", "cssmin"]);
 	});
 	
 	grunt.registerTask("test", ["jasmine"]);
