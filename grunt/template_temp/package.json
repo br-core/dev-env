@@ -1,0 +1,23 @@
+{
+  "name": "grunt-template",
+  "version": "1.0.0",
+  "description": "grunt-template\r =============",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/br-core/dev-env"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/br-core/dev-env/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jasmine": "*",
+    "grunt-regarde": "~0.1.1",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-contrib-livereload": "~0.1.2",
+    "grunt-contrib-jshint": "~0.6.2",
+    "grunt-contrib-cssmin": "~0.6.1"
+  }
+}
