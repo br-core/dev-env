@@ -72,6 +72,7 @@ module.exports = function(grunt) {
 		},
 	});
 	
+	// Load the plugins.
 	grunt.loadNpmTasks("grunt-contrib-livereload");
 	grunt.loadNpmTasks("grunt-contrib-connect");
 	grunt.loadNpmTasks("grunt-contrib-jasmine");
@@ -79,6 +80,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks("grunt-contrib-jshint");
 	grunt.loadNpmTasks("grunt-contrib-cssmin");
 	
+	// Default task(s).
 	grunt.registerTask("default", "", function (){
 		grunt.option("force", true);
 		grunt.task.run(["livereload-start", "connect", "regarde", "jasmine", "jshint", "cssmin"]);
