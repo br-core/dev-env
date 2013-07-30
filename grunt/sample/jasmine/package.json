@@ -1,23 +1,22 @@
 {
-  "name": "grunt-jasmine",
-  "version": "0.0.0",
-  "description": "grunt-jasmine\r =============",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "grunt-unit-test",
+  "version": "1.0.0",
+  "description": "grunt-unit-test\r =============",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jwhu1024/grunt-jasmine.git"
+    "url": "https://github.com/br-core/dev-env"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jwhu1024/grunt-jasmine/issues"
+    "url": "https://github.com/br-core/dev-env/issues"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-contrib-jasmine": "~0.5.1",
-    "grunt-contrib-watch": "~0.5.1"
+    "grunt-contrib-jasmine": "*",
+    "grunt-regarde": "~0.1.1",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-contrib-livereload": "~0.1.2",
+    "grunt-contrib-jshint": "~0.6.2"
   }
 }
