@@ -4,6 +4,7 @@ var folderMount = function folderMount(connect, point) {
 	return connect.static(path.resolve(point));
 };
 
+// wrapper
 module.exports = function(grunt) {
 	// Project configuration.
 	grunt.initConfig({
