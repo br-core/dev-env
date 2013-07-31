@@ -3,9 +3,22 @@ Development Environment
 
 Tools, Scripts, WorkFlow
 
+## Table of content
+
+* [Setup git and hooks](#git-setup)
+  * [For Windows Users (Trivial)](#git-win-trivial)
+  * [For Power Windows Users (DIY)](#git-win-power)
+  * [For OSX Users](#git-mac)
+  * [For Ubuntu Users](#git-ubuntu)
+* [Install newer nodejs on Ubuntu from repository](#node-ubuntu)
+* [Setup Grunt task worker](#grunt)
+* [How to contribute](#how-to-contribute)
+
+
+<a name="git-setup"></a>
 Setup git and hooks
 =======
-
+<a name="git-win-trivial"></a>
 For Windows Users (Trivial)
 -------
 1. Download zip from [br-core-dev-env](https://github.com/br-core/dev-env/archive/master.zip)
@@ -20,6 +33,7 @@ After that, if the pre-commit script have been update, you just only need to do 
 1. Update pre-commit script(git pull) with any git client (sourcetree...etc).
 2. Click update.bat.
 
+<a name="git-win-power"></a>
 For Power Windows Users (DIY)
 -------
 1. Download [Git](http://git-scm.com/download/win) Stand-alone for windows and install it
@@ -30,6 +44,7 @@ For Power Windows Users (DIY)
 5. Click update.bat then it will help you to placed LUA and pre-commit script under the correct path.
 6. Click install_jshint.bat then it will help you to install jshint to check the syntax of javascripts.
 
+<a name="git-mac"></a>
 For OSX Users
 -------
 1. Download [git](http://git-scm.com/) for mac and install it. (You should already had git installed by default, check with (`which git`))
@@ -40,12 +55,14 @@ For OSX Users
 6. Copy pre-commit to your shared folder of git, ex.(`/usr/share/git-core/templates/hooks/pre-commit`)
 7. For sourcetree users, please also copy *pre-commit* to (`/Applications/SourceTree.app/Contents/Resources/git_local/share/git-core/templates/hooks/`)
 
+<a name="git-ubuntu"></a>
 For Ubuntu Users
 -------
 1. Install git(`sudo apt-get install git`)
 2. Download [Nodejs](http://nodejs.org/download/) for linux and install it
 3. Install jshint (`npm install -g jshint`)
 
+<a name="node-ubuntu"></a>
 Install newer nodejs on Ubuntu from repository
 =======
 1. Edit source list(`sudo nano /ect/apt/sources.list`)
@@ -63,10 +80,12 @@ Install newer nodejs on Ubuntu from repository
 ```
 5. Check version(`node -v`)
 
+<a name="grunt"></a>
 Setup Grunt task worker
 =======
 1. Grunt template [Link](https://github.com/br-core/dev-env/tree/master/grunt/template)
 
+<a name="how-to-contribute"></a>
 How to contribute?
 =======
 1. Create a branch (`git checkout -b new_feature`)
