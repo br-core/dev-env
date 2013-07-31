@@ -3,7 +3,7 @@ Development Environment
 
 Tools, Scripts, WorkFlow
 
-Setup Environment
+Setup git and hooks
 =======
 
 For Windows Users (Trivial)
@@ -30,14 +30,24 @@ For Power Windows Users (DIY)
 5. Click update.bat then it will help you to placed LUA and pre-commit script under the correct path.
 6. Click install_jshint.bat then it will help you to install jshint to check the syntax of javascripts.
 
+For OSX Users
+-------
+1. Download [git](http://git-scm.com/) for mac and install it. (You should already had git installed by default, check with (`which git`))
+2. Download [Nodejs](http://nodejs.org/download/) for osx and install it
+3. Install jshint (`npm install -g jshint`)
+4. Find your lua path and change shebang of downloaded *pre-commit*, ex.(`#!/usr/local/bin/lua`)
+5. Let *pre-commit* runnable (`sudo chmod +x pre-commit`)
+6. Copy pre-commit to your shared folder of git, ex.(`/usr/share/git-core/templates/hooks/pre-commit`)
+7. For sourcetree users, please also copy *pre-commit* to (`/Applications/SourceTree.app/Contents/Resources/git_local/share/git-core/templates/hooks/`)
+
 For Ubuntu Users
 -------
 1. Install git(`sudo apt-get install git`)
 2. Download [Nodejs](http://nodejs.org/download/) for linux and install it
 3. Install jshint (`npm install -g jshint`)
 
-Install newer nodejs on Ubuntu
--------
+Install newer nodejs on Ubuntu from repository
+=======
 1. Edit source list(`sudo nano /ect/apt/sources.list`)
 2. Add (`http://archive.ubuntu.com/ubuntu/ quantal main restricted universe multiversedeb`) and (`http://security.ubuntu.com/ubuntu/ quantal-security main restricted universe multiverse`)
 3. Update Package list(`sudo apt-get update`)
@@ -53,7 +63,7 @@ Install newer nodejs on Ubuntu
 ```
 5. Check version(`node -v`)
 
-Grunt
+Setup Grunt task worker
 =======
 1. Grunt template [Link](https://github.com/br-core/dev-env/tree/master/grunt/template)
 
